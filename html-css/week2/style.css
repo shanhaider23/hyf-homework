@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: sans-serif ;   
+    width:100%;
+
+    }
+.web{
+    padding:3% 15%;
+    background-color: rgba(237, 232, 225, 0.76);
+    border-bottom:1px solid rgb(209, 204, 204);
+    }
+
+.web p{
+    
+    color:rgb(131, 146, 161);
+    font-weight: 600;
+    }
+nav ul {
+    display:flex;
+    list-style-type:none;
+    height:12%;
+    padding-left:15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items:center;
+    font-weight: bold;
+    
+    }
+
+nav li{
+    padding-right:35px;
+      
+    }
+nav li a{
+    text-decoration:none;
+    color:rgb(88, 90, 92);
+    }
+
+nav a:hover{
+    color:rgb(131, 146, 161);
+    }
+
+.office img{
+    width: 100%;
+    }
+.main{
+    display:flex;
+    padding:5px 15%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom:5%;
+    
+    }
+.main p{
+    color:#6d7984;
+    font-weight:520;
+    }
+
+h2, h3{
+    padding-bottom:21px;
+    }
+
+
+.industry {
+    flex-basis:37%;
+    padding-top:5%;
+    padding-bottom:2%;
+  
+    }
+.galary{
+    flex-basis:37%;
+    padding-top:5%;
+    padding-bottom:2%;
+    
+}
+.practical {
+    flex-basis:53%;    
+    padding-top:5%;
+    padding-bottom:2%;
+    align-content: flex-end;
+} 
+
+.logo{
+    flex-basis:53%;    
+    padding-top:5%;
+    padding-bottom:2%;
+    align-content: flex-end;
+}
+
+.logo ul{
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+ 
+}
+.logo ul li{
+    width: 22%;
+    padding: 25px;
+    
+    
+
+}
+footer {
+  
+    background-color:#8928f8;
+    font-weight: bold;
+    color:white;
+    display:flex;
+    padding:2% 15%;
+    justify-content:space-between;
+  
+}
+
+
+footer li{
+    list-style-type: none;
+    line-height:50px;
+    text-decoration: underline;
+
+}
+/*Small phones*/
+@media only screen and (max-width: 480px){
+    
+    body{
+        font-size: 12px;
+    }
+    .main{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    footer{
+       
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 155px;   
+    }
+}
+   /*tablets*/
+@media only screen and (max-width: 768px){
+    
+    body{
+        font-size: 12px;
+    }
+    .main{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    footer{
+       
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+     
+    }
+}
