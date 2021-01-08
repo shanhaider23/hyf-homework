@@ -1,0 +1,196 @@
+ *{
+     padding: 5px;
+ }
+ body{
+background-color:white;
+ }
+ 
+ .hed{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     height: 100%;
+     width: 100%;
+     flex-flow:row wrap;
+     align-items: center;
+     text-align: center;
+     
+ }
+ 
+ .logo{
+    flex:1 1 auto;
+    background-color:rgba(243, 45, 10, 0.336);
+    border:solid;
+    margin: 1em;
+    flex-grow: .2;
+    width: 30px;
+    
+     }
+.clear{
+    background-color: white;
+    margin: 2em;
+    flex-grow: 1;
+    width: 250px;
+}
+ .navi{
+    background-color: darkgrey;
+    flex:1 1 auto;
+    background-color:gray;
+    border:solid;
+    margin: 2em;
+    flex-grow: 1;
+    width: 250px;
+ }
+ .account{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: bolder;
+    
+ }
+ .country{
+    margin-left: 9%;
+    font-weight: bolder;
+ }
+ .address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: bolder;
+ }
+ .comment{
+    resize: none;
+    height: 150px;
+    width: 850px;
+ }
+ .description{
+    display: flex;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-left: 3%;
+ }
+ .description p{
+    font-weight: lighter;
+    font-size: smaller;
+    font-style: italic;
+ }
+ .shipping {
+    display: flex;
+    justify-content: space-between;
+     
+ }
+ .shipping button{
+    width: 250px;
+    height: 80px;
+ }
+.main h3{
+    font-weight: bolder;
+}
+.email {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+.password{
+    
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bolder;
+    padding-left: 9.5%;
+}
+.re{
+   
+    justify-content: space-around;
+    font-weight: bolder;
+    padding-left: 4.5%;
+}
+.checkbox{
+    display: flex;
+    padding-left: 8.5%;
+    font-weight: bolder;
+}
+.click{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.click button{
+    width: 250px;
+    height: 80px;
+}
+.shoes{
+    display: flex;
+    padding-left: 8.5%;
+    font-weight: bolder;
+    gap: 150px;
+}
+.jewelry{
+    display: flex;
+    padding-left: 8.5%;
+    font-weight: bolder;
+    gap: 150px;
+    
+}
+.handbag{
+    display: flex;
+    padding-left: 8.5%;
+    font-weight: bolder;
+}
+.flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ 
+    flex-direction: row;
+}
+.flex-container img{
+    width: 285px;
+    padding-right: 15%;
+}
+.items{
+    
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 14%;
+    padding-right: 7%;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bolder;
+    padding-left: 4%;
+}
+.ncard{
+    
+    font-weight: bolder;
+    padding-left: 12.5%;
+}  
+.tcard{
+    
+    font-weight: bolder;
+    padding-left: 14.8%;
+}
+.month{
+    display: flex;
+    flex-direction: row;
+  
+    font-weight: bolder;
+    padding-left: 14.1%;
+}
+.cvv{
+    
+    font-weight: bolder;
+    padding-left: 17.7%;
+ }  
+ /* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .card, .flex-container,.items,.email,.address,.account,.hed,.description {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

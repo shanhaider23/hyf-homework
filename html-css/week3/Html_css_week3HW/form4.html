@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <div class="hed">
+           <div class="logo">
+             
+            <p>Fine Choice</p>
+           </div>
+           <div class="clear">
+   
+           </div>
+           <div class="navi">
+               <p>Navigation</p>
+           </div>
+        </div>   
+       
+       </header>
+
+<div class="main">
+    <h1>Sign up to yourcustomtailor.com</h1>
+    <h3>Step 4/4 - Payment</h3>
+    <h3>Progress</h3>
+    <div class="w3-light-grey">
+        <div class="w3-grey" style="height:34px;width:100%"></div>
+      </div><br>
+    <p>Please fill in your payment data</p>
+</div>    
+    <form action="form.php" method="GET">
+
+<div class="ncard">
+    <label>Name on Card</label>
+            <input type="text"  name="cardname" size="35" required>
+</div>
+<div class="tcard">
+    <label>Card Type</label>  
+    <select>
+      <option value=""></option>
+      <option value="Visa">Visa</option>
+      <option value="Master Card">Master Card</option>
+      <option value="American Express">American Express</option>
+      <option value="Dankort">Dankort</option>
+      
+    </select>
+</div>
+<div class="card">
+    <div><label>Credit card number</label><input type="text" name="cardnumber" minlength="13" maxlength="16" size="35" required></div>
+    <div><label>First Name</label><input type="text" name="cardname" size="35" required></div>  
+</div>
+<div class="month">
+    <div><label>Exp Month</label>
+            <input type="text"  name="expmonth" size="5" required></div>
+            <div><label>Exp Year</label>
+                <input type="text"  name="expyear" size="5" required></div>
+</div>
+<div class="cvv">
+    <div><label>CVV</label>
+                <input type="text" name="cvv" size="5" minlength="3" maxlength="3" required></div>
+
+</div>
+<div class="click">
+    <button  type="submit"> Next step</button>
+    </div>
+</form>
+    
+</body>
+</html>
