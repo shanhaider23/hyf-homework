@@ -1,7 +1,7 @@
 let dogYearOfBirth = 2018
 let dogYearFuture = 2027
 let dogYear =dogYearFuture - dogYearOfBirth
-let dogAgeInHumanYear = 16*Math.log(dogYear)+31;
+let dogAgeInHumanYear = 7*dogYear;
 let shouldShowResultInDogYears = `Your dog will be ${dogAgeInHumanYear} dog years old in ${dogYearFuture}.`;
 let shouldShowResultInHumanYears = `Your dog will be ${dogYear} human years old in ${dogYearFuture}`;
 if (dogYear <= 17){
