@@ -1,6 +1,6 @@
 let firstWords =['Flex', 'Perfect', 'Extreme', 'Fort', 'Newly']
 let secondWords = ['Corporate', 'IPS', 'APS', 'Limited', 'Organization']
-let randomNumber = Math.floor(Math.random(0) * 10) + 0;
+let randomNumber = Math.floor(Math.random(0) * firstWords.length);
 console.log(randomNumber);
 let Name1 = firstWords[(randomNumber)] 
 let Name2 = secondWords[(randomNumber)]
