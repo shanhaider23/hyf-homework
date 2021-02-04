@@ -1,6 +1,5 @@
 const notes = [];
 
-
 function saveNote(content, id) {
     let writeNotes = { content: content, id: id }
     notes.push(writeNotes);
@@ -15,8 +14,7 @@ function getNote(id) {
     for (let i = 0; i < notes.length; i++) {
         if (id === notes[i].id) {
             return notes[i];
-
-           
+          
         };
         
     }
