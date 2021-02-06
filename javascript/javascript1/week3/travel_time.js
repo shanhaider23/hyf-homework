@@ -5,7 +5,7 @@ const travelInformation = {
   function timeInfo(){
     const time = travelInformation.destinationDistance / travelInformation.speed;
     const hours = Math.floor(time);
-    const min = Math.floor((time - hours) * 100);
+    const min = Math.floor((time - hours) * 60);
     return `${hours} hours and ${min} minutes.`
   }
   

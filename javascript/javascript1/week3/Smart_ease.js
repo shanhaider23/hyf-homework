@@ -36,14 +36,17 @@ logOutNotesFormatted();
 
 const activities = [];
 function addActivity(date, activity, duration) {
-
+    if (typeof date === "string" && typeof activity === "string" && typeof duration === "number")
     activities.push({ date: date, activity: activity, duration: duration })
-
+    else {
+        return console.log(`Invalid Info`);
+        }
 }
-addActivity("23/7-18", "Youtube", 30);
-addActivity("23/7-18", "Instagram", 40);
-addActivity("23/7-18", "HBO Nordic", 60);
 
+addActivity("23-07-2019", "Youtube", 30);
+addActivity("23-07-2019", "Instagram", 40);
+addActivity("23-07-2019", "HBO Nordic", 60);
+addActivity('', '', '');
 console.log(activities);
 function showStatus(value) {
     let totalDuration = 0;
