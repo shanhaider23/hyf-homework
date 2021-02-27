@@ -1,0 +1,49 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #dfff6d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+header,
+h1 {
+  width: 800px;
+  padding-left: 40px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.search {
+  padding-left: 80px;
+  padding-bottom: 22px;
+}
+.price {
+  padding-left: 80px;
+  padding-bottom: 22px;
+}
+.quantity {
+  padding-left: 80px;
+  padding-bottom: 22px;
+}
+.type {
+  padding-left: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
