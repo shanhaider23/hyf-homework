@@ -27,11 +27,6 @@ function myFunctionSearch() {
     item.name.toLowerCase().includes(searchInput)
   );
   console.log(inputProducts);
-  document.getElementById(
-    "display"
-  ).innerHTML = `Product : ${inputProducts[0].id}<br>Name : ${inputProducts[0].name}<br>Price :${inputProducts[0].price}<br>Rating :${inputProducts[0].rating}<br>
-     Product : ${inputProducts[1].id}<br>Name : ${inputProducts[1].name}<br>Price :${inputProducts[1].price}<br>Rating :${inputProducts[1].rating}<br>
-     Product : ${inputProducts[2].id}<br>Name : ${inputProducts[2].name}<br>Price :${inputProducts[2].price}<br>Rating :${inputProducts[2].rating}`;
 
   renderProducts(inputProducts);
 }
