@@ -10,8 +10,9 @@ const presser = function (e) {
   }
 };
 
+const inputNumberElement = document.getElementById("inputnumber");
 const inputTime = function () {
-  return document.getElementById("inputnumber").value;
+  return inputNumberElement.value;
 };
 
 document.getElementById("btn1").addEventListener("click", function () {

@@ -1,14 +1,14 @@
 //1-
 const array = [
-  (firstFunction = function () {
+  function () {
     console.log("first function");
-  }),
-  (secondFunction = function () {
+  },
+  function () {
     console.log("second function");
-  }),
-  (thirdFunction = function () {
+  },
+  function () {
     console.log("third function");
-  }),
+  },
 ];
 array.forEach((item) => item());
 //2-
