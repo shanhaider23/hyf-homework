@@ -24,13 +24,13 @@ resolveTimeout(8).then(() => {
   console.log("I am called asynchronously.");
 });
 
-async function resolveTimeout2(resolveAfter) {
+async function esolveTimeoutWithAsync(resolveAfter) {
   const timer = await setTimeout(() => {
     console.log("I am called asynchronously (async/await).");
   }, resolveAfter * 3000);
   return timer;
 }
-resolveTimeout2(5);
+esolveTimeoutWithAsync(5);
 //3-rewrite timer
 function setTimeoutPromise(resolvedAfter) {
   return new Promise((resolve, reject) => {
