@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background: #bfddff;
+}
+header {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 40px;
+  font-style: oblique 70deg;
+  color: rgb(101, 250, 71);
+}
+form {
+  text-align: center;
+  margin-top: 50px;
+}
+.form1 {
+  margin-bottom: 10px;
+}
+.form2 {
+  margin-bottom: 70px;
+}
+.form3 {
+  margin-bottom: 10px;
+}
+.form4 {
+  margin-bottom: 100px;
+}
+input[type="text"] {
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #c9b6b6;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+button[type="submit"] {
+  padding: 15px 30px;
+  background: #c2c2c2;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+input[type="number"] {
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #c9b6b6;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.results {
+  width: 50%;
+  background: #bfddff;
+  height: 90vh;
+  margin-left: 450px;
+  border-radius: 2px;
+}
+.results img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
