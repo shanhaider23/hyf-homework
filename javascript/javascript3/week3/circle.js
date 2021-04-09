@@ -24,17 +24,19 @@ class Circle {
     context.closePath();
   }
 }
-var colorArray = ["red", "green", "yellow", "blue", "pink", "brown", "orange"];
-let circleColor = colorArray[Math.floor(Math.random() * 7 + 1)];
+let colorArray = ["red", "green", "yellow", "blue", "pink", "brown", "orange"];
+let randomColorPicker = Math.floor(Math.random() * 7 + 1)
+let circleColor = colorArray[randomColorPicker];
 let allCircle = [];
 let createCircle = function (circle) {
   circle.draw(context);
 };
 for (let i = 0; i < 10; i++) {
   setInterval(() => {
-    let randomXpos = Math.floor(Math.random() * 600);
-    let randomYpos = Math.floor(Math.random() * 600);
-    let randomRadius = Math.floor(Math.random() * 100);
+    let randomNumber = Math.random()
+    let randomXpos = Math.floor(randomNumber * 600);
+    let randomYpos = Math.floor(randomNumber * 600);
+    let randomRadius = Math.floor(randomNumber * 100);
     let myCircle = new Circle(
       randomXpos,
       randomYpos,

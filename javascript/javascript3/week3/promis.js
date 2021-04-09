@@ -22,9 +22,13 @@ promiseAll.then((data) => {
     const fullNameRepo = user.items[0].full_name;
     const urlRepo = user.items[0].html_url;
     const ownerName = user.items[0].owner.login;
-    console.log(fullNameRepo);
-    console.log(urlRepo);
-    console.log(ownerName);
+    function display(x){
+      console.log(x)
+    }
+    display(fullNameRepo);
+    display(urlRepo);
+    display(ownerName);
+    
     const appendUl = document.createElement("ul");
     const appendLi = document.createElement("li");
     const childLi = document.createElement("li");
