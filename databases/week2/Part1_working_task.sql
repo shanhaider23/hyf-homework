@@ -13,7 +13,18 @@ SET
     status_id= 3
 WHERE
     id = 37;
-
+-- Change a task status
+UPDATE task 
+SET 
+    status_id = 3
+WHERE
+    id = 37;
+-- Mark a task as complete
+UPDATE task 
+SET 
+    status_id = 3
+WHERE
+    id = 36;
 -- Delete a task
 DELETE FROM task
 WHERE id = 3;
