@@ -25,9 +25,12 @@ select * from meal
 limit 5;
 
 -- Get the meals that have good reviews
-select meal.title , AVG(review.stars)
-from meal inner join review on meal.id = review.meal_id
-where stars >3 group by meal_id;
+select meal.title , AVG(review.stars) AS avg_number_of_stars
+from meal
+inner join review on meal.id = review.meal_id
+group by meal.id
+having avg_number_of_stars > 3
+order by avg_number_of_stars desc;
 
 -- Get reservations for a specific meal sorted by created_date
 select meal.id, meal.title, reservation.created_date, reservation.meal_id
