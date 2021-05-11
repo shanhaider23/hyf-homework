@@ -57,7 +57,7 @@ router.get("/:id", (request, response) => {
   if (isNaN(id)) {
     return response.status(400).json({ error: "id must be an integer" });
   } else {
-    response.json(meals[id - 1]);
+    response.json(meals.filter(meal => meal.id === id));
   }
 });
 
