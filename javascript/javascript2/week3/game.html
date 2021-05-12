@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fastest presser</h1>
+    </header>
+    <section>
+      <div class="start">
+        <input type="number" placeholder="Time" id="inputnumber" />
+      </div>
+      <div class="start1"><button id="btn1">Start Game</button></div>
+      <div class="start2">
+        <button id="btn2" onClick="refreshPage()">Restart Game</button>
+      </div>
+
+      <div class="line"></div>
+      <main>
+        <div id="pressS">
+          <h2>Press: S</h2>
+          <h2 id="countS"></h2>
+        </div>
+
+        <div id="pressL">
+          <h2>Press: L</h2>
+
+          <h2 id="countL"></h2>
+        </div>
+
+        <h2 id="winnings"></h2>
+        <canvas id="confetti"></canvas>
+      </main>
+    </section>
+    <script src="confetti.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -13,7 +13,11 @@ FROM meal
 LEFT JOIN reservation
 	ON meal.id = meal_id
 GROUP BY meal.id
+
 HAVING  max_reservations > total_reservations is null
+=======
+HAVING  max_reservations > total_reservations 
+
 order by available_spots;
 
 -- Get meals that has been created between two dates
@@ -22,12 +26,24 @@ where created_date between '2020-01-01' and '2020-12-01';
 
 -- Get only specific number of meals fx return only 5 meals
 select * from meal 
+
 where id between 1 and 5;
 
 -- Get the meals that have good reviews
 select meal.title , review.stars
 from meal inner join review on meal.id = review.meal_id
 where stars >3 order by stars desc;
+
+limit 5;
+
+-- Get the meals that have good reviews
+select meal.title , AVG(review.stars) AS avg_number_of_stars
+from meal
+inner join review on meal.id = review.meal_id
+group by meal.id
+having avg_number_of_stars > 3
+order by avg_number_of_stars desc;
+
 
 -- Get reservations for a specific meal sorted by created_date
 select meal.id, meal.title, reservation.created_date, reservation.meal_id
