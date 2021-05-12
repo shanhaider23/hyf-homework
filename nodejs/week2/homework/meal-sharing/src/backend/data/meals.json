@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2019/12/7 14:34",
+        "price" : 67
+    },
+    {
+        "id": 2,
+        "title": "Biryani",
+        "maxNumberOfGuests": 7,
+        "description": "Great and tasty Indian Rice",
+        "createdAt": "2021/02/16 18:30",
+        "price": 175
+      },
+    
+      {
+        "id": 3,
+        "title": "Butter Chicken",
+        "maxNumberOfGuests": 12,
+        "description": "Best Butter Chicken in town.",
+        "createdAt": "2021/05/06 15:50",
+        "price": "250"
+      }
+]
