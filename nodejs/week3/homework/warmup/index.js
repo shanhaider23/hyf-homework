@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+app.use(express.urlencoded({extended: true}));
 app.get("/", (req, res) => res.send("nodejs week3 homework"));
 
 app.get("/calculator/multiply", (req, res) => {
@@ -28,7 +28,7 @@ app.get("/calculator/divide", (req, res) => {
   res.send(` ${values}`);
 });
 app.post("/calculator/add", (req, res) => {
-  const values = Object.values(req.query)
+  const values = Object.values(req.body)
     .flat()
     .reduce((acc, val) => acc * 1 + val * 1);
   res.send(` ${values}`);
