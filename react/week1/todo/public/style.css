@@ -7,7 +7,12 @@ body {
     background-color: #dfe6e9;
     text-align: center;
   }
-  
+  .heading {
+    text-align: center;
+    font-size: 2em;
+    color: #2d3436;
+    margin: 20px 0 30px;
+  }
     
   .card {
     border-radius: 25px;
