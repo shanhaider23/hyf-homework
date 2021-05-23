@@ -8,7 +8,7 @@ function Card(props) {
         <h2 className="name">{props.title}</h2>
         <Detail className= "info" detailInfo={props.date}/>
         <Detail className="info" detailInfo ={props.time}/>
-        <Avatar img className="circle-img" src={props.img} alt="morning" />
+        <Avatar img ={props.img} />
         </div>
     );
   }
