@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./todoapp.css";
+import TimeUsed from "./TimeUsed";
 
 function TodoApp() {
   const [task, setTask] = useState("");
-  const [tasklist, setTaskList] = useState([]);
-  const [seconds, setSeconds] = useState(0);
+  const [taskList, setTaskList] = useState([]);
 
-  useEffect(() => {
-    setTimeout(() => setSeconds(seconds + 1), 1000);
-  });
   const handleChange = (e) => {
     setTask(e.target.value);
   };
@@ -16,27 +13,27 @@ function TodoApp() {
   const AddTask = () => {
     if (task !== "") {
       const taskDetails = {
-        id: Math.floor(Math.random() * 1000),
+        id: task + Math.floor(Math.random() * 1000) + new Date(),
         value: task,
         isCompleted: false,
       };
 
-      setTaskList([...tasklist, taskDetails]);
+      setTaskList([...taskList, taskDetails]);
     }
   };
 
-  const deletetask = (e, id) => {
+  const deleteTask = (e, id) => {
     e.preventDefault();
-    setTaskList(tasklist.filter((t) => t.id !== id));
+    setTaskList(taskList.filter((task) => task.id !== id));
   };
 
   const taskCompleted = (e, id) => {
     e.preventDefault();
     //let's find index of element
-    const element = tasklist.findIndex((elem) => elem.id === id);
+    const element = taskList.findIndex((elem) => elem.id === id);
 
     //copy array into new variable
-    const newTaskList = [...tasklist];
+    const newTaskList = [...taskList];
 
     //edit our element
     newTaskList[element] = {
@@ -49,7 +46,7 @@ function TodoApp() {
 
   return (
     <div className="todo">
-      <h2>You have used {seconds} seconds on this webside</h2>
+      <TimeUsed />
       <input
         type="text"
         name="text"
@@ -61,19 +58,25 @@ function TodoApp() {
         Add
       </button>
       <br />
-      {tasklist !== [] ? (
+      {taskList !== [] ? (
         <ul>
-          {tasklist.map((t) => (
-            <li className={t.isCompleted ? "crossText" : "listitem"}>
-              {t.value}
+          {taskList.map((task) => (
+            <li
+              key={task.id}
+              className={task.isCompleted ? "crossText" : "listitem"}
+            >
+              {task.value}
               <button
                 className="completed"
-                onClick={(e) => taskCompleted(e, t.id)}
+                onClick={(e) => taskCompleted(e, task.id)}
               >
                 Completed
               </button>
 
-              <button className="delete" onClick={(e) => deletetask(e, t.id)}>
+              <button
+                className="delete"
+                onClick={(e) => deleteTask(e, task.id)}
+              >
                 Delete
               </button>
             </li>
