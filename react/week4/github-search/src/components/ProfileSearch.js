@@ -30,7 +30,7 @@ function UserProfileComponent() {
 
   useEffect(() => {
     gitHubApiHandler();
-  }, []);
+  }, [input]);
 
   if (iserror) {
     return <div>Error: {iserror.message}</div>;
